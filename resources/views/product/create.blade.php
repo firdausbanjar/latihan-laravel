@@ -21,8 +21,12 @@
                                 <input type="text" class="form-control" id="product-category" name="product-category">
                             </div>
                             <div class="form-group">
-                                <label for="product-price">Harga Produk</label>
+                                <label for="description">Harga Produk</label>
                                 <input type="number" class="form-control" id="product-price" name="product-price">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Deskripsi</label>
+                                <textarea id="description" name="description" rows="4" cols="50"></textarea>
                             </div>
                             <br>
                             <input type="submit" class="btn btn-success" value="Simpan">

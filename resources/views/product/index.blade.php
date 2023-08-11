@@ -30,6 +30,7 @@
                                     <th scope="col">Nama Produk</th>
                                     <th scope="col">Kategori Produk</th>
                                     <th scope="col">Harga (RP)</th>
+                                    <th scope="col">Deskripsi</th>
                                     <th scope="col">Aksi</th>
                                 </tr>
                             </thead>
@@ -41,6 +42,7 @@
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->category }}</td>
                                         <td>{{ number_format($product->price, 0, ',', '.') }}</td>
+                                        <td>{!! $product->description !!}</td>
                                         <td>
                                             <div class="row">
                                                 <a href="{{ route('products.edit', [$product->id]) }}"

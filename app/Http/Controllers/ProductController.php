@@ -34,6 +34,7 @@ class ProductController extends Controller
         $product->name = $request->get('product-name');
         $product->category = $request->get('product-category');
         $product->price = $request->get('product-price');
+        $product->description = $request->get('description');
         $product->save();
 
         return redirect()->route('products.index')->with('status', 'Produk berhasil ditambahkan');
@@ -66,6 +67,7 @@ class ProductController extends Controller
         $product->name = $request->get('product-name');
         $product->category = $request->get('product-category');
         $product->price = $request->get('product-price');
+        $product->description = $request->get('description');
         $product->save();
 
         return redirect()->route('products.index')->with('status', "Data produk berhasil diubah");

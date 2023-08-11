@@ -218,27 +218,13 @@
         document.addEventListener('DOMContentLoaded', () => {
             new DataTable('#products-table')
 
-            // let plugins = ['Autoformat', 'BlockQuote', 'Bold', 'CKBox', 'CloudServices', 'Essentials', 'Heading',
-            //     'Image', 'ImageCaption', 'ImageStyle', 'ImageToolbar', 'ImageUpload', 'Indent', 'Italic',
-            //     'Link', 'List', 'MediaEmbed', 'Paragraph', 'PasteFromOffice', 'PictureEditing', 'Table',
-            //     'TableToolbar', 'TextTransformation'
-            // ]
+            // CKEDITOR.replace('description')
 
-            // ClassicEditor
-            //     .create(document.querySelector('#product-name'))
-            //     .catch(error => {
-            //         console.error(error);
-            //     });
-            // ClassicEditor
-            //     .create(document.querySelector('#product-category'))
-            //     .catch(error => {
-            //         console.error(error);
-            //     });
-            // ClassicEditor
-            //     .create(document.querySelector('#product-price'))
-            //     .catch(error => {
-            //         console.error(error);
-            //     });
+            ClassicEditor
+                .create(document.querySelector('#description'))
+                .catch(error => {
+                    console.error(error);
+                });
 
         })
     </script>

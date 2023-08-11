@@ -30,6 +30,10 @@
                                 <input type="number" class="form-control" id="product-price" name="product-price"
                                     value="{{ $product->price }}">
                             </div>
+                            <div class="form-group">
+                                <label for="description">Deskripsi</label>
+                                <textarea id="description" name="description" rows="4" cols="50">{{ $product->description }}</textarea>
+                            </div>
                             <br>
                             <input type="submit" class="btn btn-success" value="Edit">
                         </form>
