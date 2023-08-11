@@ -25,7 +25,4 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/profile', [ProductController::class, 'ckeditorTest']);
-Route::post('/profile', [ProductController::class, 'ckeditorData'])->name('ckeditor.data');
-
 Route::resource('products', ProductController::class);
