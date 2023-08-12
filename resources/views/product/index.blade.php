@@ -46,10 +46,10 @@
                                         <td>
                                             <div class="row">
                                                 <a href="{{ route('products.edit', [$product->id]) }}"
-                                                    class="btn btn-warning btn-sm mr-2">Edit</a>
+                                                    class="btn btn-warning btn-sm m-1">Edit</a>
                                                 <form action="{{ route('products.destroy', [$product->id]) }}"
                                                     method="post" onsubmit="return confirm('Hapus Produk?')"
-                                                    class="d-line">
+                                                    class="d-line m-1">
                                                     @csrf
                                                     <input type="hidden" name="_method" value="delete">
                                                     <input type="submit" value="Hapus" class="btn btn-danger btn-sm">

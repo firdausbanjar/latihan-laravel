@@ -35,7 +35,7 @@
                                 <textarea id="description" name="description" rows="4" cols="50">{{ $product->description }}</textarea>
                             </div>
                             <br>
-                            <input type="submit" class="btn btn-success" value="Edit">
+                            <input type="submit" class="btn btn-success" value="Simpan">
                         </form>
                     </div>
                 </div>
